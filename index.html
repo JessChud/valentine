@@ -193,6 +193,56 @@
             0%, 100% { opacity: 1; transform: scale(1); }
             50% { opacity: 0.5; transform: scale(1.3); }
         }
+
+        /* Mobile styles */
+        @media (max-width: 600px) {
+            .card {
+                padding: 30px 20px;
+                margin: 10px;
+                max-width: 95%;
+            }
+
+            .big-heart {
+                font-size: 50px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+            }
+
+            .success-message h1 {
+                font-size: 1.6rem;
+            }
+
+            .btn-yes {
+                padding: 18px 40px;
+                font-size: 1.3rem;
+            }
+
+            .btn-no {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+
+            .celebration {
+                font-size: 40px;
+            }
+
+            .photo-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .photo-container img {
+                max-width: 250px !important;
+            }
+
+            .photo-container .big-heart {
+                font-size: 40px;
+                margin-bottom: 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -212,8 +262,11 @@
         <div class="success-message" id="success">
             <div class="celebration">🎉💕🎉</div>
             <h1>Yay! Fluffy is Jessie's Valentine!</h1>
-            <img src="fluffy_jessie.JPG" alt="Fluffy and Jessie" style="max-width: 350px; border-radius: 20px; box-shadow: 0 10px 30px rgba(201, 75, 75, 0.3); margin: 20px 0; border: 4px solid #ff6b9d;">
-            <div class="big-heart">💖</div>
+            <div class="photo-container" style="display: flex; align-items: center; justify-content: center; gap: 20px; margin: 20px 0;">
+                <div class="big-heart">💖</div>
+                <img src="fluffy_jessie.JPG" alt="Fluffy and Jessie" style="max-width: 300px; border-radius: 20px; box-shadow: 0 10px 30px rgba(201, 75, 75, 0.3); border: 4px solid #ff6b9d;">
+                <div class="big-heart">💖</div>
+            </div>
             <p style="color: #9b59b6;">Forever and always! Fluffy is my best friend in the world.</p>
         </div>
     </div>
